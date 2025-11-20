@@ -1,0 +1,146 @@
+/* ==========================
+   ESTILOS GENERALES DEL SITIO
+   Dr. Renzo Daniel Jaume
+   ========================== */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ==========================
+   ENCABEZADOS
+   ========================== */
+header {
+    background: linear-gradient(135deg, #0057a8, #00c46b);
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 1.15rem;
+}
+
+/* ==========================
+   CONTENEDORES Y SECCIONES
+   ========================== */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ==========================
+   GRID Y TARJETAS
+   ========================== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+    color: #0057a8;
+    margin-top: 0;
+}
+
+/* ==========================
+   BOTONES
+   ========================== */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #0057a8;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #004280;
+}
+
+/* ==========================
+   SECCIÓN SOBRE MÍ
+   ========================== */
+.sobre-mi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.info h2 {
+    color: #0057a8;
+    margin-top: 0;
+}
+
+/* ==========================
+   FOOTER
+   ========================== */
+footer {
+    background: #1b1c1d;
+    color: #eee;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+}
+
+/* ==========================
+   RESPONSIVE GENERAL
+   ========================== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    .btn {
+        width: 100%;
+    }
+}
